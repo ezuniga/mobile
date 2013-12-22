@@ -5,9 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Sangakoo</title>
         <link rel="stylesheet" href="css/jquery.css" />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/stylesheet.css" />
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery-mobile.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$','$$'], ['\\(','\\)']], displayMath: [ ['$$$','$$$'], ['\[','\]'] ]}
+        });
+        </script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body>
         <div data-role="page" id="temario">
@@ -56,7 +63,7 @@
     </div>
     <div data-role="content">
         <ul data-role="listview" data-count-theme="a" data-inset="true">
-            <li data-icon="eye"><a href="#" data-transition="slide">Concepto de matriz y tipos de matrices</a></li>
+            <li data-icon="eye"><a href="#unidad" data-transition="slide">Concepto de matriz y tipos de matrices</a></li>
             <li><a href="#operaciones-con-matrices" data-transition="slide">Operaciones con matrices<span class="ui-li-count">5</span></a></li>
             <li><a href="#matriz-inversa" data-transition="slide">Matriz inversa<span class="ui-li-count">2</span></a></li>
         </ul>
@@ -121,6 +128,19 @@
             <li data-icon="eye"><a href="#" data-transition="slide">Regla de Sarrus: Cálculo de determinantes de orden 3</a></li>
             <li data-icon="eye"><a href="#" data-transition="slide">Método general para el cálculo de determinantes</a></li>
         </ul>
+    </div>
+</div>
+
+
+<!-- Vista -->
+<div data-role="page" id="unidad">
+    <div data-role="header">
+        <h1>Ejemplo unidad</h1>
+        <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+    </div>
+    <div data-role="content">
+        <div id="unit-content">
+        </div>
     </div>
 </div>
     </body>
