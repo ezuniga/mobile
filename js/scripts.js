@@ -5,7 +5,10 @@ $(document).bind("mobileinit", function () {
     $.support.cors = true;
 });
 
+
 $(document).bind("pagebeforechange", function (e, data) {
+    console.log(data.options);
+    console.log(data.options.toString());
     if (typeof data.toPage === "string") {
         var u = $.mobile.path.parseUrl(data.toPage);
         var re = /^#unidad/;
