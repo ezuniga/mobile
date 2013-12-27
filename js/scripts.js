@@ -5,26 +5,48 @@ $(document).bind("mobileinit", function () {
     $.support.cors = true;
 });
 
-
-$(document).bind("pagebeforechange", function (e, data) {
-    console.log(data.options);
-    console.log(data.options.toString());
-    if (typeof data.toPage === "string") {
-        var u = $.mobile.path.parseUrl(data.toPage);
-        var re = /^#unidad/;
-        if (u.hash.search(re) !== -1) {
+$(document).ready(function() {
+    $("li").on("click", "a", function(event){
+        var unit = $(this).attr('data-name');
+        if ( unit !== undefined ){
             $.ajax({
                 url: "http://api.mobile",
                 datatype: "html",
-                success: function (data) {
-                    $('#unit-content').html(data);
-                    var math = document.getElementById("unit-content");
-                    MathJax.Hub.Queue(["Typeset",MathJax.Hub,math]);
+                data: {
+                    'number': unit
+                },
+                success: function (response) {
+                    $('#unit-content').html(response);
+                    var math_element = document.getElementById("unit-content");
+                    MathJax.Hub.Queue(["Typeset", MathJax.Hub, math_element]);
                 },
                 error: function (e) {
                     console.log(e);
                 }
             });
         }
-    }
+    });
+
+/*
+    $(document).bind("pagebeforechange", function (e, data) {
+        alert(unit);
+        if (typeof data.toPage === "string") {
+            var u = $.mobile.path.parseUrl(data.toPage);
+            var re = /^#unidad/;
+            if (u.hash.search(re) !== -1) {
+                $.ajax({
+                    url: "http://api.mobile",
+                    datatype: "html",
+                    success: function (data) {
+                        $('#unit-content').html(data);
+                        var math = document.getElementById("unit-content");
+                        MathJax.Hub.Queue(["Typeset",MathJax.Hub,math]);
+                    },
+                    error: function (e) {
+                        console.log(e);
+                    }
+                });
+            }
+        }
+    });*/
 });
