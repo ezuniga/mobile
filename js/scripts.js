@@ -5,7 +5,8 @@ $(document).bind("mobileinit", function () {
 
 $(document).ready(function() {
     $("li").on("click", "a", function(event){
-        var unit = $(this).attr('data-name');
+        var unit = $(this).attr('data-number');
+        var name = $(this).attr('data-name');
         if ( unit !== undefined ){
             $.ajax({
                 url: "http://api.mobile",
@@ -14,6 +15,7 @@ $(document).ready(function() {
                     'number': unit
                 },
                 success: function (response) {
+                    $('#unit-name').html(name);
                     $('#unit-content').html(response);
                     var math_element = document.getElementById("unit-content");
                     MathJax.Hub.Queue(["Typeset", MathJax.Hub, math_element]);
