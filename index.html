@@ -11,138 +11,352 @@
         <script type="text/javascript" src="js/scripts.js"></script>
         <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
-          tex2jax: {inlineMath: [['$$','$$'], ['\\(','\\)']], displayMath: [ ['$$$','$$$'], ['\[','\]'] ]}
+          tex2jax: {inlineMath: [["$$","$$"], ["\(","\)"]], displayMath: [ ["$$$","$$$"], ["\[","\]"] ]}
         });
         </script>
         <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body>
-        <!-- Navegación principal -->
-<div data-role="page" id="temario">
-    <div data-role="header">
-        <h1>Sangakoo</h1>
-    </div>
-    <div data-role="content">
-        <ul data-role="listview" data-count-theme="a" data-inset="true">
-            <li><a href="#algebra" data-transition="slide">Álgebra<span class="ui-li-count">7</span></a></li>
-            <li><a href="#teoria-de-numeros" data-transition="slide">Teoría de números</a></li>
-            <li><a href="#geometria" data-transition="slide">Geometría</a></li>
-            <li><a href="#matematicas-discretas" data-transition="slide">Matemáticas discretas</a></li>
-            <li><a href="#fundamentos-de-las-matematicas" data-transition="slide">Fundamentos de las matemáticas</a></li>
-            <li><a href="#probabilidad-y-estadistica" data-transition="slide">Probabilidad y estadística</a></li>
-            <li><a href="#matematicas-recreativas" data-transition="slide">Matemáticas recreativas</a></li>
-            <li><a href="#calculo-y-analisis" data-transition="slide">Cálculo y análisis</a></li>
-            <li><a href="#matematicas-aplicadas" data-transition="slide">Matemáticas aplicadas</a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- ALGEBRA -->
-<div data-role="page" id="algebra">
-    <div data-role="header">
-        <h1>Álgebra</h1>
-        <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
-    </div>
-    <div data-role="content">
-        <ul data-role="listview" data-count-theme="a" data-inset="true">
-            <li><a href="#matrices" data-transition="slide">Matrices<span class="ui-li-count">3</span></a></li>
-            <li><a href="#determinantes" data-transition="slide">Determinantes<span class="ui-li-count">3</span></a></li>
-            <li><a href="#ecuaciones" data-transition="slide">Ecuaciones</a></li>
-            <li><a href="#fracciones" data-transition="slide">Fracciones</a></li>
-            <li><a href="#polinomios" data-transition="slide">Polinomios</a></li>
-            <li><a href="#programacion-lineal" data-transition="slide">Programación lineal</a></li>
-            <li><a href="#vectores" data-transition="slide">Vectores</a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- MATRICES -->
-<div data-role="page" id="matrices">
-    <div data-role="header">
-        <h1>Matrices</h1>
-        <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
-    </div>
-    <div data-role="content">
-        <ul data-role="listview" data-count-theme="a" data-inset="true">
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="Concepto de matriz y tipos de matrices" data-number="1.1">Concepto de matriz y tipos de matrices</a></li>
-            <li><a href="#operaciones-con-matrices" data-transition="slide">Operaciones con matrices<span class="ui-li-count">5</span></a></li>
-            <li><a href="#matriz-inversa" data-transition="slide">Matriz inversa<span class="ui-li-count">2</span></a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- Operaciones con matrices -->
-<div data-role="page" id="operaciones-con-matrices">
-    <div data-role="header">
-        <h1>Operaciones con matrices</h1>
-        <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
-    </div>
-    <div data-role="content">
-        <ul data-role="listview" data-count-theme="a" data-inset="true">
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Suma de matrices</a></li>
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Producto de matrices</a></li>
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Rango de una matriz: método de Gauss</a></li>
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Rango de una matriz mediante determinantes</a></li>
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Matriz traspuesta</a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- Matriz inversa -->
-<div data-role="page" id="matriz-inversa">
-    <div data-role="header">
-        <h1>Matriz inversa</h1>
-        <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
-    </div>
-    <div data-role="content">
-        <ul data-role="listview" data-count-theme="a" data-inset="true">
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Matriz inversa: Método de Gauss</a></li>
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Matriz inversa por determinantes</a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- Determinantes -->
-<div data-role="page" id="determinantes">
-    <div data-role="header">
-        <h1>Determinantes</h1>
-        <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
-    </div>
-    <div data-role="content">
-        <ul data-role="listview" data-count-theme="a" data-inset="true">
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Notación, menores complementarios y matriz adjunta</a></li>
-            <li><a href="#metodos-de-calculo" data-transition="slide">Métodos de cálculo<span class="ui-li-count">3</span></a></li>
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Propiedades de los determinantes</a></li>
-        </ul>
-    </div>
-</div>
-
-<!-- Métodos de cálculo -->
-<div data-role="page" id="metodos-de-calculo">
-    <div data-role="header">
-        <h1>Métodos de cálculo</h1>
-        <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
-    </div>
-    <div data-role="content">
-        <ul data-role="listview" data-count-theme="a" data-inset="true">
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Cálculo de determinantes de orden 1 y 2</a></li>
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Regla de Sarrus: Cálculo de determinantes de orden 3</a></li>
-            <li data-icon="eye"><a href="#unidad" data-transition="slide" data-name="1.1.1">Método general para el cálculo de determinantes</a></li>
-        </ul>
-    </div>
-</div>
-
-
-<!-- Vista -->
-<div data-role="page" id="unidad">
-    <div data-role="header">
-        <h1 id="unit-name"></h1>
-        <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
-    </div>
-    <div data-role="content">
-        <div id="unit-content">
+    <div data-role="page" id="units">
+        <div data-role="header">
+            <h1>Temario</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li><a href="#_1" data-transition="slide">Álgebra<span class="ui-li-count">5</span></a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="3">Matemáticas recreativas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="4">Cálculo y análisis</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="5">Matemáticas aplicadas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="6">Probabilidad y estadística</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="7">Fundamentos de las matemáticas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="8">Matemáticas discretas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="9">Teoría de números</a></li>
+            </ul>
         </div>
     </div>
-</div>
+    <div data-role="page" id="_1">
+        <div data-role="header">
+            <h1>Álgebra</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li><a href="#_1_1" data-transition="slide">Matrices<span class="ui-li-count">3</span></a></li>
+                <li><a href="#_1_2" data-transition="slide">Determinantes<span class="ui-li-count">3</span></a></li>
+                <li><a href="#_1_3" data-transition="slide">Ecuaciones<span class="ui-li-count">4</span></a></li>
+                <li><a href="#_1_4" data-transition="slide">Fracciones<span class="ui-li-count">7</span></a></li>
+                <li><a href="#_1_5" data-transition="slide">Polinomios<span class="ui-li-count">8</span></a></li>
+                <li><a href="#_1_6" data-transition="slide">Programación lineal<span class="ui-li-count">3</span></a></li>
+                <li><a href="#_1_7" data-transition="slide">Vectores<span class="ui-li-count">9</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_1">
+        <div data-role="header">
+            <h1>Matrices</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_1_2">Concepto de matriz y tipos de matrices</a></li>
+                <li><a href="#_1_1_3" data-transition="slide">Operaciones con matrices<span class="ui-li-count">5</span></a></li>
+                <li><a href="#_1_1_4" data-transition="slide">Matriz inversa<span class="ui-li-count">2</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_1_3">
+        <div data-role="header">
+            <h1>Operaciones con matrices</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_1_3_1">Suma de matrices</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_1_3_2">Producto de matrices</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_1_3_3">Rango de una matriz: método de Gauss</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_1_3_4">Rango de una matriz mediante determinantes</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_1_3_5">Matriz traspuesta</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_1_4">
+        <div data-role="header">
+            <h1>Matriz inversa</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_1_4_1">Matriz inversa: Método de Gauss</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_1_4_2">Matriz inversa por determinantes</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_2">
+        <div data-role="header">
+            <h1>Determinantes</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_2_1">Notación, menores complementarios y matriz adjunta</a></li>
+                <li><a href="#_1_2_2" data-transition="slide">Métodos de cálculo<span class="ui-li-count">3</span></a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_2_3">Propiedades de los determinantes</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_2_2">
+        <div data-role="header">
+            <h1>Métodos de cálculo</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_2_2_1">Cálculo de determinantes de orden 1 y 2</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_2_2_2">Regla de Sarrus: Cálculo de determinantes de orden 3</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_2_2_3">Método general para el cálculo de determinantes</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_3">
+        <div data-role="header">
+            <h1>Ecuaciones</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li><a href="#_1_3_1" data-transition="slide">Ecuaciones de primer grado<span class="ui-li-count">4</span></a></li>
+                <li><a href="#_1_3_2" data-transition="slide">Ecuaciones de 2º grado<span class="ui-li-count">5</span></a></li>
+                <li><a href="#_1_3_3" data-transition="slide">Sistemas de ecuaciones<span class="ui-li-count">9</span></a></li>
+                <li><a href="#_1_3_4" data-transition="slide">Ecuaciones trigonométricas<span class="ui-li-count">8</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_3_1">
+        <div data-role="header">
+            <h1>Ecuaciones de primer grado</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_1_1">Definición y resolución de ecuaciones de primer grado</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_1_2">Ecuaciones equivalentes de primer grado</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_1_3">Problemas con ecuaciones de primer grado</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_1_4">Ecuación lineal con n incógnitas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_3_2">
+        <div data-role="header">
+            <h1>Ecuaciones de 2º grado</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_2_1">Definición y resolución general de ecuaciones de 2º grado</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_2_2">Discriminante de una ecuación de segundo grado</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_2_3">Ecuaciones de segundo grado incompletas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_2_4">Ecuación de segundo grado a partir de sus soluciones y suma y producto de raíces</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_2_5">Ecuaciones bicuadradas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_3_3">
+        <div data-role="header">
+            <h1>Sistemas de ecuaciones</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li><a href="#_1_3_3_1" data-transition="slide">Sistemas de ecuaciones lineales<span class="ui-li-count">3</span></a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_2">Sistemas lineales de tres ecuaciones con tres incógnitas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_3">Método de Cramer</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_4">Método de Gauss</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_5">Sistemas de ecuaciones no lineales</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_6">Teorema de Rouché-Fröbenius</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_7">Sistemas de ecuaciones lineales n x m</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_8">Sistemas equivalentes</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_9">Sistemas escalonados</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_3_3_1">
+        <div data-role="header">
+            <h1>Sistemas de ecuaciones lineales</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_1_1">Método de sustitución</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_1_2">Método de igualación</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_3_1_3">Método de reducción</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_3_4">
+        <div data-role="header">
+            <h1>Ecuaciones trigonométricas</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_4_1">Relaciones trigonométricas para un mismo ángulo</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_4_3">Relaciones trigonométricas: ángulo doble, ángulo mitad, suma y diferencia de ángulos</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_4_4">Transformaciones de sumas en productos y productos en sumas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_4_5">Teorema del seno y del coseno</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_4_6">Funciones trigonométricas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_4_7">Razones trigonométricas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_4_9">Resolución de ecuaciones trigonométricas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_3_4_10">Resolución de triángulos</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_4">
+        <div data-role="header">
+            <h1>Fracciones</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_1">Introducción a las fracciones</a></li>
+                <li><a href="#_1_4_3" data-transition="slide">Clasificación de fracciones<span class="ui-li-count">2</span></a></li>
+                <li><a href="#_1_4_4" data-transition="slide">Operaciones con fracciones<span class="ui-li-count">4</span></a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_5">Formalización de los números racionales</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_6">Números mixtos</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_7">Ordenar fracciones</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_8">Fracción como porcentaje</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_4_3">
+        <div data-role="header">
+            <h1>Clasificación de fracciones</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_3_1">Fracciones propias e impropias</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_3_2">Fracciones equivalentes: simplificación y fracción irreductible</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_4_4">
+        <div data-role="header">
+            <h1>Operaciones con fracciones</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_4_1">Suma y resta de fracciones</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_4_2">Multiplicación de fracciones</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_4_4">Extracción de factor común</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_4_4_5">División de fracciones</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_5">
+        <div data-role="header">
+            <h1>Polinomios</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_1">Monomios</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_2">Operaciones con monomios</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_3">Definición y clasificación de polinomios</a></li>
+                <li><a href="#_1_5_4" data-transition="slide">Operaciones con polinomios<span class="ui-li-count">4</span></a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_5">Identidades notables</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_6">Teorema del resto y teorema del factor</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_8">Raíz y factorización de un polinomio</a></li>
+                <li><a href="#_1_5_9" data-transition="slide">Fracciones algebraicas<span class="ui-li-count">5</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_5_4">
+        <div data-role="header">
+            <h1>Operaciones con polinomios</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_4_1">Suma y resta de polinomios</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_4_2">Producto de polinomios</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_4_3">Cociente de polinomios</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_4_4">Regla de Ruffini</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_5_9">
+        <div data-role="header">
+            <h1>Fracciones algebraicas</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_9_1">Fracciones algebraicas equivalentes</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_9_2">Simplificación y amplificación de fracciones algebraicas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_9_3">Reducción de fracciones algebraicas a común denominador</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_9_4">Operaciones con fracciones algebraicas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_5_9_5">Problemas de aplicación de polinomios y fracciones algebraicas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_6">
+        <div data-role="header">
+            <h1>Programación lineal</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_6_1">Inecuaciones lineales de dos variables</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_6_2">Zona de validez de inecuaciones lineales simultáneas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_6_3">Maximización y minimización</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_7">
+        <div data-role="header">
+            <h1>Vectores</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_1">Conceptos fundamentales de los vectores</a></li>
+                <li><a href="#_1_7_2" data-transition="slide">Operaciones con vectores<span class="ui-li-count">2</span></a></li>
+                <li><a href="#_1_7_3" data-transition="slide">Producto escalar<span class="ui-li-count">3</span></a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_4">Producto Vectorial</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_5">Combinación lineal entre vectores</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_6">Vectores linealmente independientes y dependientes</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_7">Bases y coordenadas</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_8">Base ortogonal y base ortonormal</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_9">Sistema de referencia</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_7_2">
+        <div data-role="header">
+            <h1>Operaciones con vectores</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_2_1">Suma y resta de vectores</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_2_2">Producto de un número real por un vector</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="_1_7_3">
+        <div data-role="header">
+            <h1>Producto escalar</h1>
+            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-count-theme="a" data-inset="true">
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_3_1">Definición, expresión analítica y propiedades del producto escalar</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_3_3">Aplicaciones del producto escalar</a></li>
+                <li data-icon="eye"><a href="#unidad" data-transition="slide" data-number="1_7_3_4">Interpretación geométrica del producto escalar</a></li>
+            </ul>
+        </div>
+    </div>
     </body>
 </html>
