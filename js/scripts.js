@@ -8,7 +8,7 @@ $(document).ready(function() {
         var unit = $(this).attr('data-number');
         var name = $(this).attr('data-name');
         if ( unit !== undefined ){
-            $.ajax({
+            /*$.ajax({
                 url: "http://api.mobile",
                 datatype: "html",
                 data: {
@@ -23,7 +23,9 @@ $(document).ready(function() {
                 error: function (e) {
                     console.log(e);
                 }
-            });
+            });*/
+            $('#unit-name').html(name);
+            $('#unit-content').html('Arnau tita petita 8==D');
         }
     });
 });
