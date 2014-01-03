@@ -7,7 +7,8 @@ $(document).ready(function() {
     $("li").on("click", "a", function(event){
         var unit = $(this).attr('data-number');
         var name = $(this).attr('data-name');
-        if ( unit !== undefined ){
+        var href = $(this).attr('href');
+        if ( href == '#unidad' ){
             /*$.ajax({
                 url: "http://api.mobile",
                 datatype: "html",
