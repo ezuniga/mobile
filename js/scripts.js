@@ -4,13 +4,17 @@ $(document).bind("mobileinit", function () {
 });
 
 $(document).ready(function() {
+        alert('entro');
     $("li").on("click", "a", function(event){
         var unit = $(this).attr('data-number');
+        console.log(unit);
         var name = $(this).attr('data-name');
+        console.log(name);
         var href = $(this).attr('href');
         if ( href == '#unidad' ){
-            /*$.ajax({
-                url: "http://api.mobile",
+            $.ajax({
+                //url: "http://api-sangakoo.rhcloud.com/",
+                url: "http://api.mobile/php/api/v1/",
                 datatype: "html",
                 data: {
                     'number': unit
@@ -24,9 +28,9 @@ $(document).ready(function() {
                 error: function (e) {
                     console.log(e);
                 }
-            });*/
-            $('#unit-name').html(name);
-            $('#unit-content').html('Arnau tita petita 8==D');
+            });
+            //$('#unit-name').html(name);
+            //$('#unit-content').html('Arnau tita petita 8==D');
         }
     });
 });
