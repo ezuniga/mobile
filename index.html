@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="css/stylesheet.css" />
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery-mobile.min.js"></script>
-        <!--script type="text/javascript" src="js/scripts.js"></script-->
         <script type="text/javascript">
             $(document).bind("mobileinit", function () {
                 $.mobile.allowCrossDomainPages = true;
@@ -22,8 +21,8 @@
                     var href = $(this).attr('href');
                     if ( href == '#unidad' ){
                         $.ajax({
-                            //url: "http://api-sangakoo.rhcloud.com/",
-                            url: "http://api.mobile/php/api/v1/",
+                            url: "http://api-sangakoo.rhcloud.com/api/v1/",
+                            //url: "http://api.mobile/php/api/v1/",
                             datatype: "html",
                             data: {
                                 'number': unit
