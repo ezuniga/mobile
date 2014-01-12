@@ -9,6 +9,7 @@
     <description>Más de 500 temas de matemáticas en tu móvil</description>
     <author href="https://www.sangakoo.com" email="israel@sangakoo.com">Israel Fenor</author>
 
+    <preference name="phonegap-version" value="3.1.0" />
     <preference name="permissions" value="none"/>
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />

@@ -22,21 +22,24 @@
             }
 
             $(document).ready(function() {
+                $("#exit").on("click", function(){
+                    navigator.app.exitApp();
+                });
                 $("li").on("click", "a", function(event){
-                    var unit = $(this).attr('data-number');
-                    var name = $(this).attr('data-name');
-                    var href = $(this).attr('href');
-                    if ( href == '#unidad' ){
+                    var unit = $(this).attr("data-number");
+                    var name = $(this).attr("data-name");
+                    var href = $(this).attr("href");
+                    if ( href == "#unidad" ){
                         $.ajax({
                             url: "http://api-sangakoo.rhcloud.com/api/v1/",
                             //url: "http://api.mobile/php/api/v1/",
                             datatype: "html",
                             data: {
-                                'number': unit
+                                "number": unit
                             },
                             success: function (response) {
-                                $('#unit-name').html(name);
-                                $('#unit-content').html(response);
+                                $("#unit-name").html(name);
+                                $("#unit-content").html(response);
                                 var math_element = document.getElementById("unit-content");
                                 MathJax.Hub.Queue(["Typeset", MathJax.Hub, math_element]);
                             },
@@ -47,7 +50,6 @@
                     }
                 });
             });
-
         </script>
         <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
@@ -60,7 +62,7 @@
     <div data-role="page" id="units">
         <div data-role="header">
             <h1>Temario</h1>
-            <a data-icon="back" data-rel="back" data-transition="slide" data-direction="reverse">Atrás</a>
+            <a data-icon="power" data-rel="exit" id="exit">Salir</a>
         </div>
         <div data-role="content">
             <ul data-role="listview" data-count-theme="a" data-inset="true">
