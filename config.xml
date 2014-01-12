@@ -2,7 +2,7 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.sangakoo.app"
-        versionCode = "1" 
+        versionCode = "1"
         version     = "1.0.0" >
 
     <name>Sangakoo</name>
@@ -21,6 +21,8 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="" />
     <preference name="android-installLocation" value="auto" />
+
+    <gap:plugin name="com.adobe.plugins.gaplugin" />
 
     <!-- http://www.gieson.com/Library/projects/utilities/icon_slayer -->
     <!-- http://ticons.fokkezb.nl/ -->

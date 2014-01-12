@@ -14,6 +14,13 @@
                 $.support.cors = true;
             });
 
+            var gaPlugin;
+
+            function onDeviceReady() {
+                gaPlugin = window.plugins.gaPlugin;
+                gaPlugin.init(successHandler, errorHandler, "UA-11657726-10", 10);
+            }
+
             $(document).ready(function() {
                 $("li").on("click", "a", function(event){
                     var unit = $(this).attr('data-number');
