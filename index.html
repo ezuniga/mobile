@@ -26,6 +26,10 @@
                 $("#exit").on("click", function(){
                     navigator.app.exitApp();
                 });
+                $("a[data-rel='back']").on("click", function(){
+                    $('#unit-content').empty();
+                });
+
                 $("li").on("click", "a", function(event){
                     var unit = $(this).attr("data-number");
                     var name = $(this).attr("data-name");
