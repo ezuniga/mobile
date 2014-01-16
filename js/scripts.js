@@ -22,6 +22,7 @@ $(document).ready(function() {
         var name = $(this).attr("data-name");
         var href = $(this).attr("href");
         if ( href == "#unidad" ){
+            $('#unit-content').empty();
             $.ajax({
                 url: "http://api-sangakoo.rhcloud.com/api/v1/",
                 //url: "http://api.mobile/php/api/v1/",
