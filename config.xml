@@ -23,7 +23,7 @@
     <preference name="android-minSdkVersion" value="" />
     <preference name="android-installLocation" value="auto" />
 
-    <gap:plugin name="com.adobe.plugins.gaplugin" />
+    <!--gap:plugin name="com.adobe.plugins.gaplugin" /-->
 
     <!-- http://www.gieson.com/Library/projects/utilities/icon_slayer -->
     <!-- http://ticons.fokkezb.nl/ -->

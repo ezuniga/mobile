@@ -15,13 +15,6 @@
                 $.support.cors = true;
             });
 
-            var gaPlugin;
-
-            function onDeviceReady() {
-                gaPlugin = window.plugins.GAPlugin;
-                gaPlugin.init(null, null, "UA-11657726-10", 10);
-            }
-
             $(document).ready(function() {
                 $("#exit").on("click", function(){
                     navigator.app.exitApp();
