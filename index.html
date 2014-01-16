@@ -19,7 +19,7 @@
 
             function onDeviceReady() {
                 gaPlugin = window.plugins.GAPlugin;
-                gaPlugin.init(successHandler, errorHandler, "UA-11657726-10", 10);
+                gaPlugin.init(null, null, "UA-11657726-10", 10);
             }
 
             $(document).ready(function() {
@@ -34,7 +34,6 @@
                     var unit = $(this).attr("data-number");
                     var name = $(this).attr("data-name");
                     var href = $(this).attr("href");
-                    gaPlugin.trackEvent( nativePluginResultHandler, nativePluginErrorHandler, "Unidad", "Click", name, 1);
                     if ( href == "#unidad" ){
                         $.ajax({
                             url: "http://api-sangakoo.rhcloud.com/api/v1/",
